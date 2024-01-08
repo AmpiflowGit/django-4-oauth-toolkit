@@ -18,7 +18,8 @@ class Migration(migrations.Migration):
     - 0006_auto_20171214_2232.py
     """
     dependencies = [
-        migrations.swappable_dependency(settings.AUTH_USER_MODEL)
+        migrations.swappable_dependency(settings.AUTH_USER_MODEL),
+        migrations.swappable_dependency(settings.OAUTH2_PROVIDER_APPLICATION_MODEL),
     ]
 
     operations = [
